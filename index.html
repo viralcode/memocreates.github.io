@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMOCREATES</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 min-h-screen flex items-center justify-center p-8">
+    <div class="text-center">
+        <!-- Logo Container -->
+        <div class="flex items-center justify-center mb-8">
+            <i class="fas fa-pencil-ruler text-4xl bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent mr-2 animate-bounce"></i>
+            <h1 class="text-5xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent">
+                MEMOCREATES
+            </h1>
+        </div>
+
+        <!-- Animated Services -->
+        <div class="space-y-4 mb-16">
+            <div class="service-item opacity-0 transform translate-x-[-100px] transition-all duration-1000">
+                <h2 class="text-3xl text-white font-semibold">UI Design</h2>
+            </div>
+            <div class="service-item opacity-0 transform translate-x-[-100px] transition-all duration-1000 delay-300">
+                <h2 class="text-3xl text-white font-semibold">UX Design</h2>
+            </div>
+            <div class="service-item opacity-0 transform translate-x-[-100px] transition-all duration-1000 delay-600">
+                <h2 class="text-3xl text-white font-semibold">Web Design</h2>
+            </div>
+        </div>
+
+        <!-- Email Contact Section -->
+        <div class="mt-12 text-center">
+            <div class="inline-flex items-center space-x-2 bg-gray-800 px-6 py-3 rounded-full">
+                <i class="fas fa-envelope text-purple-500"></i>
+                <a href="mailto:hello@memocreates.com" 
+                   class="text-white hover:text-purple-400 transition-colors duration-300 text-lg">
+                    hello@memocreates.com
+                </a>
+            </div>
+            <p class="text-gray-400 mt-4">Get in touch for custom solutions</p>
+        </div>
+    </div>
+
+    <script>
+        // Animation for service items
+        document.addEventListener('DOMContentLoaded', () => {
+            const serviceItems = document.querySelectorAll('.service-item');
+            
+            setTimeout(() => {
+                serviceItems.forEach(item => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateX(0)';
+                });
+            }, 100);
+        });
+    </script>
+</body>
+</html> 
